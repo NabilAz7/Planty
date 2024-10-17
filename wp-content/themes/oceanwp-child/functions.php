@@ -31,6 +31,20 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'add_css', 10 );
 
+function ajouter_lien_admin($items, $args) {
+    // Vérifiez si l'utilisateur est connecté
+    if (is_user_logged_in()) {
+        // Créez le lien d'administration avec un ID
+        $admin_link = '<li id="menu-item-admin"><a href="' . admin_url() . '">Admin</a></li>';
+        // Ajoutez le lien à la fin du menu principal (header-planty)
+        if ($args->theme_location == 'header-planty') {
+            $items .= $admin_link;
+        }
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'ajouter_lien_admin', 10, 2);
+
 
 
 // END ENQUEUE PARENT ACTION
