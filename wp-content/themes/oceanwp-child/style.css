@@ -11,3 +11,331 @@ Updated: 2024-07-03 10:32:19
 
 */
 
+/* Header Officiel
+.container-header{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 0px;
+  
+}
+
+/* menu-nav correspond donc au container qui comprend le lien "commander" et "nous rencontrez" */
+
+/* .menu-nav{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+  font-size: 17px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  
+} */
+
+/* .menu-item-18 cible le container du bouton commander  */
+/* 
+.menu-item-18{
+  background-color: #DC9F96;
+  padding: 10px;
+  font-weight: 700;
+  font-family: 'Syne', sans-serif;
+
+} */
+
+/* .menu-item-20 cible le container de "nous rencontrez" */
+
+/* .menu-item-20{
+    margin-top: 10px;
+    font-weight: 700;
+  } */
+
+/* ( Trouver la class qui cible le text du bouton commander ) ( le a href dans le li) => comment le ciblé ? */ 
+/* #menu-item-18 a{
+  color: rgb(255, 255, 255);
+  font-family: 'Syne', sans-serif;
+} */
+
+/* .logo cible le logo "Planty" */
+/* .logo{
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 250px;
+
+} */
+
+/* Responsive "header" */
+
+/* 
+@media screen and (max-width: 768px){
+  .menu-nav{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+  .logo{
+    width: 95%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  .container-header{
+    display: flex;
+    flex-direction: column;
+
+  } */
+
+  /* C'est ok, seul question es ce que  l'espace des deux boutons ( "nous rencontrez" et "commander") est bien partagé en deux partie égale ?  */
+    
+  /* } */
+
+  /* @media screen and (max-width: 360px){
+
+    .menu-nav{
+      margin:0px;
+   }
+
+   .logo{
+    width: 92%;
+  
+  }
+  }
+ */ */
+
+
+/* header ( logo + button commander + hover menu) */
+
+.Main-container{
+  list-style: none;
+}
+
+
+.Logo{
+  width: 220px ;
+  margin-left: 20px;
+}
+
+.button-commander{
+  background-color: #DC9F96;
+  padding: 15px;
+}
+.button-commander{
+  color: white;
+}
+
+.hover:hover{
+  color: black !important;
+}
+
+.Main-container{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.item1 {
+    order: 1;
+    flex: 1;
+  }
+  
+  .item2 {
+    order: 2;
+  }
+  
+  .item3 {
+    order: 3;
+  }
+
+  .item4 {
+    order: 4;
+  }
+
+
+  .font-family{
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; 
+  font-size : 20px;}
+
+  /* Container boissons */
+
+  .container-drink{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.container-drink div{
+  width: 25%;
+  text-align: center;
+}
+
+.titre-votre-commande{
+  color: white;
+  font-size: 30px;
+  margin-left: 27px ;
+  
+}
+
+/* Marge en dessous de l'image */
+
+.margin-bottom-img{
+  margin-bottom: 20px;
+}
+
+/* boutton de selection nommbre de boissons */
+
+.input-drink{
+  height: 56px;
+  color: black !important;
+  background-color: white !important;
+  align-items: center;
+  padding: 0px !important;
+  width: 39px !important;
+  text-align: center;
+  
+}
+
+
+.box-container-info{
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  
+}
+
+.box-container-info div{
+  flex:1;
+
+}
+
+.col-1{
+  padding-right: 30px;
+  border-right: 1px solid white;
+  
+}
+
+.col-2{
+  padding-left: 30px;
+
+
+}
+
+.infos-column{
+  color: white;
+}
+
+.color-title{
+  color: white;
+}
+ 
+/* comprends la marge le background color et la taille des emplacements a remplir  */
+/* A noter que j'aurai pu utiliser .infos-column div {}  */
+
+.margin-box-infos input{
+  margin-bottom: 10px;
+  background-color: white !important;
+  border-radius: 12px;
+  height: 60px;
+  width: 420px;
+}
+
+.info-input{
+  height: 55px;
+  width: 198px;
+  background-color: #E0B9B4 !important;
+  border-radius: 5px !important;
+  color:white;
+ }
+
+ .flexbox-input{
+  text-align: center;
+  margin-top: 25px;
+ }
+
+ .wpcf7-spinner{
+  display: none !important;
+ }
+
+
+
+
+/*Pour tous les appareils équipés d'écrans et dont la taille est inférieure à 780px*/
+@media screen and (max-width: 992px){
+
+}
+
+@media screen and (max-width: 768px){
+
+  .container-drink {
+    flex-direction: column;
+  }
+   .container-drink div{
+    width: 100%;
+   }
+
+   .titre-votre-commande{
+    font-size: 27px;
+    margin-left: 0px ;
+    text-align: center;
+   
+}
+
+  .box-container-info{
+    flex-direction: column;
+   
+  }
+
+  .col-1{
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    border-right: none;
+    padding-right: 0px;
+  }
+
+  .col-2{
+    padding: 0px;
+  }
+
+
+}
+
+
+
+
+   
+  /* .button-commander{
+
+    margin: 0;
+    background-color: #DC9F96;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    padding-bottom: 0px;
+    height: 40px;
+    color: white;
+     
+         
+
+  } */
+
+   
+ /* .font-family{
+     
+    font-size: 20px;
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+ } */
+
+  

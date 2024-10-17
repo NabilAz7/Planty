@@ -1,0 +1,45 @@
+/* Footer Officiel */
+
+.header-footer-group{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+ul.menu{
+    list-style: none;
+}
+
+/* Header Officiel */
+
+header{
+    font-family: 'Syne', sans-serif;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 0px;
+    
+  }
+  
+  /* menu-nav correspond donc au container qui comprend le lien "commander" et "nous rencontrez" */
+
+  
+  .menu-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+    font-size: 17px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+  
+    
+  }
+
+  
+  
