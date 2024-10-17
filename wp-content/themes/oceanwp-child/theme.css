@@ -41,5 +41,112 @@ header{
     
   }
 
+  /* #menu-item-20 span correspond uniquement au texte "nous rencontrez" */
+
+  #menu-item-20 span{
+    margin-right: 10px;
+  }
+  
+  /* .menu-item-18 cible le container du bouton commander  */
+  
+  .menu-item-18{
+    background-color: #DC9F96;
+    padding: 10px;
+    font-weight: 700;
+  
+  }
+  
+  /* .menu-item-20 cible le container de "nous rencontrez" */
+  
+  .menu-item-20{
+      margin-top: 10px;
+      font-weight: 700;
+    }
+  
+  /* ( Trouver la class qui cible le text du bouton commander ) ( le a href dans le li) => comment le ciblé ? */ 
+  #menu-item-18 a{
+    color: rgb(255, 255, 255);
+  }
+  
+  /* .logo cible le logo "Planty" */
+  .logo{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 250px;
+  
+  }
+
+  /* Lien "Admin" */
+
+  #menu-item-admin a{
+    font-size: 17px;
+  }
+
+  #menu-item-admin{
+    margin-top: 10px;
+    font-weight: 700;
+    padding-right: 10px;
+    order: 2;
+  }
+
+  #menu-item-18{
+    order: 3;
+
+  }
+
+  #menu-item-20{
+    order: 1;
+  }
+
+  /* Supression de la loupe de recherche dans le header */
+
+  
+
+  /* Responsive "header" */
+
+ 
+  
+  
+  @media screen and (max-width: 768px){
+    .menu-nav{
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      margin: 0px;
+      gap: 10px;
+   }
+
+   .menu-item-admin{
+    text-align: center;
+  
+   }
+  
+    .logo{
+      width: 95%;
+      margin-bottom: 15px;
+      margin-top: 10px;
+    }
+  
+    .container-header{
+      display: flex;
+      flex-direction: column;
+  
+    }
+  
+    /* C'est ok, seul question es ce que  l'espace des deux boutons ( "nous rencontrez" et "commander") est bien partagé en deux partie égale ?  */
+      
+    }
+  
+    @media screen and (max-width: 360px){
+  
+      .menu-nav{
+        margin:0px;
+     }
+  
+     .logo{
+      width: 92%;
+    
+    }
+    }
   
   
