@@ -11,100 +11,6 @@ Updated: 2024-07-03 10:32:19
 
 */
 
-/* Header Officiel
-.container-header{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-bottom: 0px;
-  
-}
-
-/* menu-nav correspond donc au container qui comprend le lien "commander" et "nous rencontrez" */
-
-/* .menu-nav{
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  list-style: none;
-  font-size: 17px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-
-  
-} */
-
-/* .menu-item-18 cible le container du bouton commander  */
-/* 
-.menu-item-18{
-  background-color: #DC9F96;
-  padding: 10px;
-  font-weight: 700;
-  font-family: 'Syne', sans-serif;
-
-} */
-
-/* .menu-item-20 cible le container de "nous rencontrez" */
-
-/* .menu-item-20{
-    margin-top: 10px;
-    font-weight: 700;
-  } */
-
-/* ( Trouver la class qui cible le text du bouton commander ) ( le a href dans le li) => comment le ciblé ? */ 
-/* #menu-item-18 a{
-  color: rgb(255, 255, 255);
-  font-family: 'Syne', sans-serif;
-} */
-
-/* .logo cible le logo "Planty" */
-/* .logo{
-  margin-top: 15px;
-  margin-left: 15px;
-  width: 250px;
-
-} */
-
-/* Responsive "header" */
-
-/* 
-@media screen and (max-width: 768px){
-  .menu-nav{
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
- }
-
-  .logo{
-    width: 95%;
-    margin-bottom: 15px;
-    margin-top: 10px;
-  }
-
-  .container-header{
-    display: flex;
-    flex-direction: column;
-
-  } */
-
-  /* C'est ok, seul question es ce que  l'espace des deux boutons ( "nous rencontrez" et "commander") est bien partagé en deux partie égale ?  */
-    
-  /* } */
-
-  /* @media screen and (max-width: 360px){
-
-    .menu-nav{
-      margin:0px;
-   }
-
-   .logo{
-    width: 92%;
-  
-  }
-  }
- */ */
-
-
 /* header ( logo + button commander + hover menu) */
 
 .Main-container{
@@ -120,14 +26,9 @@ Updated: 2024-07-03 10:32:19
 .button-commander{
   background-color: #DC9F96;
   padding: 15px;
-}
-.button-commander{
   color: white;
 }
 
-.hover:hover{
-  color: black !important;
-}
 
 .Main-container{
     display:flex;
@@ -270,6 +171,7 @@ Updated: 2024-07-03 10:32:19
 
 
 /*Pour tous les appareils équipés d'écrans et dont la taille est inférieure à 780px*/
+
 @media screen and (max-width: 992px){
 
 }
@@ -308,34 +210,6 @@ Updated: 2024-07-03 10:32:19
 
 
 }
-
-
-
-
-   
-  /* .button-commander{
-
-    margin: 0;
-    background-color: #DC9F96;
-    text-align: center;
-    font-weight: bold;
-    padding: 0;
-    padding-bottom: 0px;
-    height: 40px;
-    color: white;
-     
-         
-
-  } */
-
-   
- /* .font-family{
-     
-    font-size: 20px;
-    font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
- } */
+ 
 
   

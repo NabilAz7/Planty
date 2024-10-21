@@ -1,3 +1,16 @@
+/*
+Theme Name: OceanWP Child
+Theme URI: https://oceanwp.org/
+Template: oceanwp
+Author: OceanWP
+Author URI: https://oceanwp.org/about-oceanwp/
+Description: OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful &amp; professional design. Very fast, responsive, RTL &amp; translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet &amp; mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor &amp; WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it's the only theme you will ever need: https://oceanwp.org/demos/
+Tags: two-columns,right-sidebar,footer-widgets,blog,news,custom-background,custom-menu,post-formats,rtl-language-support,sticky-post,editor-style,threaded-comments,translation-ready,buddypress,custom-colors,featured-images,full-width-template,theme-options,e-commerce,block-styles,wide-blocks,accessibility-ready
+Version: 3.5.7.1719995539
+Updated: 2024-07-03 10:32:19
+
+*/
+
 /* Footer Officiel */
 
 .header-footer-group{
@@ -36,8 +49,6 @@ header{
     font-size: 17px;
     margin-top: 0px;
     margin-bottom: 0px;
-   
-  
     
   }
 
@@ -46,6 +57,15 @@ header{
   #menu-item-20 span{
     margin-right: 10px;
   }
+
+
+  /* .menu-item-20 cible le container de "nous rencontrez" */
+  
+  .menu-item-20{
+    margin-top: 10px;
+    font-weight: 700;
+  }
+
   
   /* .menu-item-18 cible le container du bouton commander  */
   
@@ -56,19 +76,14 @@ header{
   
   }
   
-  /* .menu-item-20 cible le container de "nous rencontrez" */
-  
-  .menu-item-20{
-      margin-top: 10px;
-      font-weight: 700;
-    }
-  
-  /* ( Trouver la class qui cible le text du bouton commander ) ( le a href dans le li) => comment le ciblé ? */ 
+  /* #menu-item-18 a correspond uniquement au texte "Commander" */
+   
   #menu-item-18 a{
     color: rgb(255, 255, 255);
   }
   
   /* .logo cible le logo "Planty" */
+
   .logo{
     margin-top: 15px;
     margin-left: 15px;
@@ -81,6 +96,8 @@ header{
   #menu-item-admin a{
     font-size: 17px;
   }
+
+  /* "Order" indique l'ordre dans lequelle on souhaite voir apparaitre les élements du header plus précisément du "menu-nav"*/
 
   #menu-item-admin{
     margin-top: 10px;
@@ -98,13 +115,7 @@ header{
     order: 1;
   }
 
-  /* Supression de la loupe de recherche dans le header */
-
-  
-
   /* Responsive "header" */
-
- 
   
   
   @media screen and (max-width: 768px){
@@ -133,8 +144,7 @@ header{
   
     }
   
-    /* C'est ok, seul question es ce que  l'espace des deux boutons ( "nous rencontrez" et "commander") est bien partagé en deux partie égale ?  */
-      
+  
     }
   
     @media screen and (max-width: 360px){
